@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Haven - Hotel & Restaurant</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="main-header">
+        <div class="logo-container">
+            <img src="images/logo.jpeg" alt="Royal Haven Logo" class="site-logo">
+        </div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#menu">Menu</a>
+            <a href="#booking">Booking</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="#booking" class="btn btn-gold nav-btn">Book Now</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="sub-title">WELCOME TO ROYAL HAVEN</span>
+            <h1>Experience Luxury Beyond Expectations</h1>
+            <p>Indulge in royal accommodations, Michelin-inspired dining, and elite wellness services.</p>
+            <div class="hero-buttons">
+                <a href="#booking" class="btn btn-gold">Reserve Your Table</a>
+                <a href="#menu" class="btn btn-outline">Explore Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="section-title">
+            <span>OUR PORTFOLIO</span>
+            <h2>Royal Haven Gallery</h2>
+            <div class="gold-divider"></div>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/hero.jpeg" alt="Royal Exterior">
+                <div class="gallery-caption">Grand Exterior</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/dinning-area.jpeg" alt="Grand Dining">
+                <div class="gallery-caption">Grand Dining Hall</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/food.jpeg" alt="Gourmet Dish">
+                <div class="gallery-caption">Gourmet Cuisine</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/bar-rooftop.jpeg" alt="Rooftop Night">
+                <div class="gallery-caption">Rooftop Sky Lounge</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/room.jpeg" alt="Executive Suite">
+                <div class="gallery-caption">Royal Executive Suite</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/double-room.jpeg" alt="Wellness Spa">
+                <div class="gallery-caption">Spa & Wellness Center</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/hero-bar.jpeg" alt="Lobby Reception">
+                <div class="gallery-caption">Grand Reception Lobby</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gym.jpeg" alt="Fitness Center">
+                <div class="gallery-caption">Elite Fitness Club</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/bar.jpeg" alt="Lounge Bar">
+                <div class="gallery-caption">Chandelier Lounge & Bar</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Restaurant Menu Section -->
+    <section id="menu" class="section menu-section">
+        <div class="section-title">
+            <span>FINE DINING</span>
+            <h2>Exquisite Menu</h2>
+            <div class="gold-divider"></div>
+        </div>
+
+        <div class="menu-container">
+            <!-- Menu Item 1 -->
+            <div class="menu-card">
+                <div class="menu-header">
+                    <h3>Pan-Seared Atlantic Salmon</h3>
+                    <span class="price">$42</span>
+                </div>
+                <p>Served with wild asparagus, truffle mashed potatoes, and lemon butter emulsion.</p>
+            </div>
+
+            <!-- Menu Item 2 -->
+            <div class="menu-card">
+                <div class="menu-header">
+                    <h3>Prime Wagyu Ribeye Steak</h3>
+                    <span class="price">$85</span>
+                </div>
+                <p>A5 Japanese Wagyu served with roasted garlic jus and grilled seasonal vegetables.</p>
+            </div>
+
+            <!-- Menu Item 3 -->
+            <div class="menu-card">
+                <div class="menu-header">
+                    <h3>Royal Truffle Pasta</h3>
+                    <span class="price">$38</span>
+                </div>
+                <p>Handmade tagliatelle with black winter truffle, aged parmesan, and cream sauce.</p>
+            </div>
+
+            <!-- Menu Item 4 -->
+            <div class="menu-card">
+                <div class="menu-header">
+                    <h3>Signature Rooftop Cocktails</h3>
+                    <span class="price">$22</span>
+                </div>
+                <p>Crafted by our master mixologists using premium spirits and exotic botanicals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Booking Section -->
+    <section id="booking" class="section booking-section">
+        <div class="section-title">
+            <span>RESERVATIONS</span>
+            <h2>Book Your Experience</h2>
+            <div class="gold-divider"></div>
+        </div>
+
+        <form id="booking-form" class="booking-form">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="John Doe" required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="+123 456 7890" required>
+            </div>
+
+            <div class="form-group">
+                <label>Service Type</label>
+                <select required>
+                    <option value="">Select Service</option>
+                    <option value="dining">Restaurant Dining</option>
+                    <option value="room">Hotel Room Suite</option>
+                    <option value="spa">Spa & Wellness</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Date</label>
+                <input type="date" required>
+            </div>
+
+            <div class="form-group">
+                <label>Time Slot</label>
+                <input type="time" required>
+            </div>
+
+            <div class="form-group">
+                <label>Guests</label>
+                <select required>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 Persons</option>
+                    <option value="4">4 Persons</option>
+                    <option value="5+">VIP Group (5+)</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-gold btn-full">Confirm Reservation</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="section-title">
+            <span>LOCATION & CONTACT</span>
+            <h2>Get In Touch</h2>
+            <div class="gold-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Royal Haven Hotel & Restaurant</h3>
+                <p><strong>Address:</strong> Boulevard Avenue, City Center Luxury Zone</p>
+                <p><strong>Phone:</strong> +1 (800) 792-5428</p>
+                <p><strong>Email:</strong> reservations@royalhaven.com</p>
+                <p><strong>Hours:</strong> 24/7 Front Desk | Dining: 11:00 AM - 12:00 AM</p>
+            </div>
+
+            <form id="contact-form" class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="4" placeholder="Your Message or Special Request" required></textarea>
+                <button type="submit" class="btn btn-outline">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <img src="images/logo.jpeg" alt="Royal Haven Logo" class="footer-logo">
+            <p>&copy; 2026 Royal Haven Hotel & Restaurant. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
